@@ -2,7 +2,7 @@
 if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) ){
 	$n = $_POST['n']; // HINT: use preg_replace() to filter the data
 	$e = $_POST['e'];
-	$m = nl2br($_POST['m']);
+	$m = ($_POST['m']);
 	$to = "koulacreation@gmail.com";	
 	$from = $e;
 	$subject = 'Contact Form Message';
